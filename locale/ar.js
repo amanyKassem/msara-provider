@@ -102,7 +102,7 @@ const ar = {
     'serviceType'               : 'نوع الخدمة',
     'choose'                    : 'اختيار',
     'myOffers'                  : 'عروضي',
-    'myHalls'                   : 'قاعاتي',
+    'myHalls'                   : 'خدماتي',
     'deleteHall'                : 'حذف',
     'deleteHallText'            : 'هل انت متأكد من مسح الخدمة؟',
     'confirmDeleteService'      : 'تأكيد مسح الخدمة',
