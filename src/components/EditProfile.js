@@ -6,7 +6,7 @@ import {
     TouchableOpacity,
     ImageBackground,
     KeyboardAvoidingView,
-    ActivityIndicator,
+    ActivityIndicator, ScrollView
 } from "react-native";
 import {Container, Content, Form, Input, Item} from 'native-base'
 import * as ImagePicker from 'expo-image-picker';
@@ -126,7 +126,7 @@ function EditProfile({navigation}) {
     return (
         <Container>
             <ImageBackground source= {image != null?{uri:image} : {uri:user.avatar}} style={[styles.bgFullWidth]}>
-                <Content contentContainerStyle={[styles.bgFullWidth]}>
+                <ScrollView contentContainerStyle={[styles.bgFullWidth]}>
                     <View style={[styles.swiperOverlay , styles.bgFullWidth , {zIndex:-1 , backgroundColor: "rgba(0, 0, 0, 0.5)"}]}/>
                     <View style={[ styles.heightFull , styles.directionColumnSpace]}>
 
@@ -199,7 +199,7 @@ function EditProfile({navigation}) {
 
                         </View>
                     </View>
-                </Content>
+                </ScrollView>
             </ImageBackground>
         </Container>
     );

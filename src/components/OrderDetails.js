@@ -74,7 +74,7 @@ function OrderDetails({navigation, route}) {
             {
                 bookingDetails ?
                     <ImageBackground source={{uri:bookingDetails.service_image}} style={[styles.bgFullWidth]}>
-                        <Content contentContainerStyle={[styles.bgFullWidth]}>
+                        <View contentContainerStyle={[styles.bgFullWidth]}>
                             <View style={[styles.swiperOverlay , styles.bgFullWidth , {zIndex:-1}]}/>
                             <View style={[ styles.heightFull, styles.directionColumnSpace, styles.paddingHorizontal_20 , styles.paddingVertical_45 ]}>
                                 <View style={[styles.Width_100]}>
@@ -171,7 +171,7 @@ function OrderDetails({navigation, route}) {
 
                                 </Modal>
                             </View>
-                        </Content>
+                        </View>
                     </ImageBackground>
                     :
                     null

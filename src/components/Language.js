@@ -33,7 +33,7 @@ function Language({navigation}) {
 
     return (
         <Container>
-            <Content contentContainerStyle={[styles.bgFullWidth ]}>
+            <View contentContainerStyle={[styles.bgFullWidth ]}>
                 <Image source={require('../../assets/images/flowers.png')} style={[styles.flowersImg]} resizeMode={'contain'} />
                 <View style={[styles.position_R , styles.bgFullWidth, styles.Width_100, styles.flexCenter , {top:-50} ]}>
                     <View style={[styles.Width_100 , styles.paddingHorizontal_30 , styles.marginBottom_40]}>
@@ -62,7 +62,7 @@ function Language({navigation}) {
                     </Form>
 
                 </View>
-            </Content>
+            </View>
         </Container>
     );
 }

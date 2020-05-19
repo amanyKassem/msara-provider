@@ -60,7 +60,7 @@ function Settings({navigation}) {
 
     return (
         <Container>
-            <Content contentContainerStyle={[styles.bgFullWidth]}>
+            <ScrollView contentContainerStyle={[styles.bgFullWidth]}>
                 <View style={[styles.position_R , styles.bgFullWidth, styles.Width_100]}>
                     <View style={[styles.Width_100 , styles.topNav , {borderBottomWidth:2 , borderLeftWidth:2 , borderColor:'#f0f0f0'}]}>
                         <ScrollView style={{}} contentContainerStyle={[styles.directionRowSpace , styles.Width_100 , styles.paddingHorizontal_15 , {
@@ -142,7 +142,7 @@ function Settings({navigation}) {
                     </View>
 
                 </View>
-            </Content>
+            </ScrollView>
         </Container>
     );
 }

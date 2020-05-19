@@ -4,6 +4,8 @@ import COLORS from '../../src/consts/colors'
 const width     = Dimensions.get('window').width;
 const height    = Dimensions.get('window').height;
 
+const IS_IPHONE_X 	= (height === 812 || height === 896) && Platform.OS === 'ios';
+
 const styles = ({
 
     // Style Loading
@@ -692,9 +694,10 @@ const styles = ({
         resizeMode          : 'contain'
     },
     flowersImg : {
-        width               : 370,
+        width               : '100%',
         height              : 370,
         right               :0,
+        alignSelf           : 'center',
         top                 :-7
     },
 
@@ -1141,14 +1144,24 @@ const styles = ({
     starStyle:{
         marginHorizontal    : 1,
     },
-    footerStyle:{
-        backgroundColor:'#fff',
-        borderRadius:10,
-        width:'70%' ,
-        position:'absolute',
-        bottom:20,
-        left:'15%'
-    },
+	footerStyle:{
+		backgroundColor:'#fff',
+		borderRadius:10,
+		width:'70%',
+		height: IS_IPHONE_X ? 30 : 45,
+		paddingTop: IS_IPHONE_X ? 30 : 0,
+		position:'absolute',
+		bottom:30,
+		left:'15%',
+		shadowColor: "#000",
+		shadowOffset: {
+			width: 0,
+			height: 2,
+		},
+		shadowOpacity: 0.25,
+		shadowRadius: 3.84,
+		elevation: 5
+	},
     notiCard:{
         borderRadius: 10,
         marginTop: 10,
@@ -1183,7 +1196,7 @@ const styles = ({
         marginBottom:20
     },
     topNav : {
-        height:100,
+        height:110,
         backgroundColor:'#fff',
         alignSelf:'center',
         borderBottomLeftRadius: 50,
