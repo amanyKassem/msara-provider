@@ -79,9 +79,9 @@ function NotificationsItems({navigation}) {
             route = 'details';
             let icon = require('../../assets/images/rating_active.png')
         } else if(type === '1'){
-            color = COLORS.orange;
+            color = '#44B28D';
             route = 'details';
-            icon = require('../../assets/images/offer_color.png')
+            icon = require('../../assets/images/new_order.png')
         } else if(type === '2'){
             color = '#FF5757';
             icon = require('../../assets/images/cancel_not.png')
