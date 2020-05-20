@@ -170,7 +170,7 @@ function MoreDetails({navigation , route}) {
                                         styles.marginBottom_5 ,styles.alignStart]}>
                                         { i18n.t('space')}</Text>
                                     <Text style={[styles.textRegular , styles.text_gray , styles.textSize_16 , styles.marginBottom_15 , styles.alignStart ]}>
-                                        {serviceDetails.capacity} { i18n.t('person')}</Text>
+                                        {serviceDetails.capacity? serviceDetails.capacity : 0} { i18n.t('person')}</Text>
 
                                     <Text style={[styles.textRegular , styles.text_White , styles.textSize_18 ,styles.marginBottom_5  , styles.alignStart ]}>
                                         { i18n.t('socialMedia')}</Text>

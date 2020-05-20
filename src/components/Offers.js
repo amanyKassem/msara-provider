@@ -83,7 +83,7 @@ function Offers({navigation}) {
                         <Text style={[styles.textRegular , styles.text_gray , styles.textSize_13, styles.alignStart]}>{ i18n.t('offersText')}</Text>
 
                         <View style={[styles.position_R, styles.height_90, styles.flexCenter , styles.directionRowSpace, styles.marginBottom_5 , styles.Width_100]}>
-                            <TouchableOpacity onPress={() => navigation.push('search' , {keyword:search})} style={[styles.searchIcon , styles.directionRow]}>
+                            <TouchableOpacity onPress={() => navigation.push('search' , {keyword:search , is_offered:true})} style={[styles.searchIcon , styles.directionRow]}>
                                 <Image source={require('../../assets/images/ico.png')} style={[styles.smImage]} resizeMode={'contain'} />
                                 <Text style={[styles.textBold , styles.text_gray , styles.textSize_18 , styles.marginHorizontal_5 ]}>|</Text>
                             </TouchableOpacity>
