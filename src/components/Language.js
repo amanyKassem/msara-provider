@@ -34,7 +34,7 @@ function Language({navigation}) {
     return (
         <Container>
             <View contentContainerStyle={[styles.bgFullWidth ]}>
-                <Image source={require('../../assets/images/flowers.png')} style={[styles.flowersImg]} resizeMode={'contain'} />
+                <Image source={require('../../assets/images/flowers.png')} style={[styles.flowersImg]} resizeMode={'cover'} />
                 <View style={[styles.position_R , styles.bgFullWidth, styles.Width_100, styles.flexCenter , {top:-50} ]}>
                     <View style={[styles.Width_100 , styles.paddingHorizontal_30 , styles.marginBottom_40]}>
                         <Text style={[styles.textBold , styles.text_black , styles.textSize_20 , styles.marginBottom_5]}>{ i18n.t('language') }</Text>
