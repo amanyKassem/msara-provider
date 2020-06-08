@@ -75,9 +75,14 @@ function Offers({navigation}) {
                     styles.marginVertical_25, styles.Width_100]}>
 
                     <View style={[styles.Width_100 , styles.paddingHorizontal_20]}>
-                        <TouchableOpacity onPress={() => navigation.navigate('home')} style={[styles.marginBottom_25, styles.transform , styles.alignStart]}>
-                            <Image source={require('../../assets/images/back.png')} style={[styles.smImage]} resizeMode={'contain'} />
-                        </TouchableOpacity>
+                        <View style={[styles.directionRowSpace]}>
+                            <TouchableOpacity onPress={() => navigation.navigate('home')} style={[styles.marginBottom_25, styles.transform , styles.alignStart]}>
+                                <Image source={require('../../assets/images/back.png')} style={[styles.smImage]} resizeMode={'contain'} />
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => navigation.navigate('addService')} style={[styles.marginBottom_25, styles.transform , styles.alignStart]}>
+                                <Image source={require('../../assets/images/union.png')} style={[styles.smImage]} resizeMode={'contain'} />
+                            </TouchableOpacity>
+                        </View>
 
                         <Text style={[styles.textBold , styles.text_black , styles.textSize_18 , styles.marginBottom_5, styles.alignStart]}>{ i18n.t('myOffers')}</Text>
                         <Text style={[styles.textRegular , styles.text_gray , styles.textSize_13, styles.alignStart]}>{ i18n.t('offersText')}</Text>

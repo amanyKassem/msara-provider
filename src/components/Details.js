@@ -123,7 +123,9 @@ function Details({navigation , route}) {
                                                     <Image source={require('../../assets/images/white_back.png')} style={[styles.smImage]} resizeMode={'contain'} />
                                                 </TouchableOpacity>
                                                 <View style={[styles.directionRow]}>
-
+                                                    <TouchableOpacity onPress={() => navigation.navigate('editService', {id:serviceDetails.id})} style={[styles.touchFav , styles.flexCenter, {margin:0 , backgroundColor: "#bbb", marginHorizontal:5}]}>
+                                                    <Image source={require('../../assets/images/writing.png')} style={[styles.favImage]} resizeMode={'contain'} />
+                                                    </TouchableOpacity>
                                                     {/*<TouchableOpacity onPress={showDatePicker} style={[styles.touchFav , styles.flexCenter, {margin:0 , backgroundColor: "#bbb" , marginHorizontal:5}]}>*/}
                                                         {/*<Image source={require('../../assets/images/calendar.png')} style={[styles.favImage]} resizeMode={'contain'} />*/}
                                                     {/*</TouchableOpacity>*/}
